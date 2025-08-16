@@ -23,7 +23,7 @@ a {
   src: url("../fonts/Tanha-FD.woff2") format("woff2");
 }
 .header_site {
-  background: #03001e; /* fallback for old browsers */
+  background: #7303c0; /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #fdeff9, #ec38bc, #7303c0, #03001e); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to bottom,
