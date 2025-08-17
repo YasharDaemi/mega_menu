@@ -12,6 +12,7 @@ body {
 ul {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
 }
@@ -22,6 +23,7 @@ a {
   font-weight: normal;
   src: url("../fonts/Tanha-FD.woff2") format("woff2");
 }
+
 .header_site {
   background: #7303c0; /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #fdeff9, #ec38bc, #7303c0, #03001e); /* Chrome 10-25, Safari 5.1-6 */
@@ -47,21 +49,24 @@ a {
   max-width: 1250px;
   margin: 0 auto;
 }
+
 .navigation_menu {
   background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(40px);
   border-radius: 20px;
   display: flex;
   justify-content: center;
   gap: 3rem;
 }
+
 .navigation_menu > li {
   padding: 18px 10px;
 }
+
 .navigation_menu > li::after {
   content: "";
   display: block;
-  border-bottom: 3px solid #f6364b;
+  border-bottom: 3px solid #7303c0;
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
   -webkit-transition: transform 250ms ease-in-out;
@@ -69,6 +74,7 @@ a {
   -ms-transition: transform 250ms ease-in-out;
   -o-transition: transform 250ms ease-in-out;
 }
+
 .navigation_menu > li:hover::after {
   transform: scaleX(1);
   -webkit-transform: scaleX(1);
@@ -76,8 +82,9 @@ a {
   -ms-transform: scaleX(1);
   -o-transform: scaleX(1);
 }
+
 .navigation_menu li a {
-  color: #fff;
+  color: #000000;
   font-weight: bold;
 }
 .arrow_icon {
@@ -85,13 +92,13 @@ a {
 }
 .arrow_icon::before {
   content: "";
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #7303c0;
+  border-right: 2px solid #7303c0;
   height: 7px;
-  display: block;
-  border-right: 2px solid #fff;
   width: 7px;
+  display: block;
   position: absolute;
-  right: 100%;
+  left: 100%;
   top: 43%;
   transform: rotate(45deg);
   transition: transform 0.15s ease-in-out;
@@ -104,6 +111,7 @@ a {
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
 }
+
 .arrow_icon:hover::before {
   transform: rotate(225deg);
   -webkit-transform: rotate(225deg);
@@ -127,11 +135,17 @@ a {
   -moz-transition: opacity 0.15s ease-in-out;
   -ms-transition: opacity 0.15s ease-in-out;
   -o-transition: opacity 0.15s ease-in-out;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
+
 .navigation_menu > li > ul.sub_menu {
   top: 59px;
-  right: -58px;
+  left: -58px;
 }
+
 ul.sub_menu li a {
   display: block;
   padding: 12px;
@@ -141,10 +155,12 @@ ul.sub_menu li a {
   -ms-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
 }
+
 ul.sub_menu li a:hover {
   background-color: #eee;
   color: #000;
 }
+
 .control:hover > .sub_menu {
   opacity: 1;
   visibility: visible;
@@ -152,6 +168,6 @@ ul.sub_menu li a:hover {
 }
 
 .left_menu {
-  right: 200px;
+  left: 200px;
   top: 64px;
 }
